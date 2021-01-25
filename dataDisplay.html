@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Display</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Filtering JSON data">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <link rel="stylesheet" href="dataDisplay.css">
+    </head>
+    <body>
+        <form action="#" id="frm">
+            <input id="searchBox" type="text" placeholder="Type in the name to search....">
+            <button>Submit</button>
+            <label for="postId"><strong>postId</strong></label>
+            <input type="radio" id="postId" name="filter" value="postId">
+            <label for="id"><strong>id</strong></label>
+            <input type="radio" id="id" name="filter" value="id">
+            <label for="name"><strong>name</strong></label>
+            <input type="radio" id="name" name="filter" value="name" checked>
+            <label for="email"><strong>email</strong></label>
+            <input type="radio" id="email" name="filter" value="email">
+        </form>
+        <ul id="objs">
+        </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="dataDisplay.js"></script>    
+    </body>
+</html>
